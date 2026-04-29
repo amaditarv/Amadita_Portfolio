@@ -1,0 +1,97 @@
+ @keyframes subtle-sharp-rotate {
+            0%, 100% { transform: rotate(0deg); }
+            50% { transform: rotate(5deg); } /* Rotasi hanya 8 derajat agar tipis */
+        }
+
+        .animate-sharp-swing {
+            transform-origin: center;
+            /* Durasi dipercepat sedikit (2s) agar terasa lebih tegas/patah */
+            animation: subtle-sharp-rotate 2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        }
+
+        .animate-sharp-swing-reverse {
+            transform-origin: center;
+            /* Kecepatan berbeda sedikit agar tidak monoton */
+            animation: subtle-sharp-rotate 2.5s cubic-bezier(0.4, 0, 0.2, 1) infinite reverse;
+        }
+
+.photo-flipper {
+    perspective: 1500px; /* Diperbesar supaya efek 3D tidak memotong foto */
+    width: 100%;
+    height: 100%;
+    margin-top: 100px
+}
+
+.photo-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    /* Durasi 10 detik agar pergantiannya tegas tapi smooth */
+    animation: pendulum-flip 10s infinite ease-in-out;
+}
+
+@keyframes pendulum-flip {
+    0%, 15%   { transform: rotateY(0deg); }    /* Stay di Foto 1 */
+    25%, 40%  { transform: rotateY(180deg); }  /* Flip ke Foto 2 */
+    50%, 65%  { transform: rotateY(0deg); }    /* Balik ke Foto 1 */
+    75%, 90%  { transform: rotateY(-180deg); } /* Flip ke Foto 3 */
+    100%      { transform: rotateY(0deg); }    /* Balik ke Foto 1 */
+}
+
+.photo-face {
+    position: absolute;
+    inset: 0; /* Menjamin foto masuk full ke container */
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: 35px;
+    overflow: hidden;
+}
+
+.photo-face img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Menjamin foto memenuhi bingkai tanpa gepeng */
+    display: block;
+}
+
+/* Pengaturan Posisi 3 Muka */
+.face-front {
+    transform: rotateY(0deg);
+    z-index: 2;
+}
+
+.face-left {
+    transform: rotateY(180deg);
+}
+
+.face-right {
+    transform: rotateY(-180deg);
+}
+
+
+    /* Membuat pola bulatan gerigi tiket */
+    .gerigi-top, .gerigi-bottom {
+        width: 100%;
+        height: 20px; /* Tinggi gerigi */
+        background-size: 20px 40px; /* Jarak antar lubang */
+        background-repeat: repeat-x;
+        position: absolute;
+        left: 0;
+        z-index: 20;
+    }
+
+    /* Warna background-image harus sama dengan warna background section (#0070E1) */
+    .gerigi-top {
+        top: -1px;
+        background-image: radial-gradient(circle at 10px 0px, #0070E1 10px, transparent 11px);
+    }
+
+    .gerigi-bottom {
+        bottom: -1px;
+        background-image: radial-gradient(circle at 10px 20px, #0070E1 10px, transparent 11px);
+    }
+
+   
