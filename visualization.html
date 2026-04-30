@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualization - Amadita Arvida</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .text-justify { text-align: justify; text-justify: inter-word; }
+    </style>
+</head>
+<body class="bg-gray-100 overflow-x-hidden">
+    <div class="absolute top-0 left-0 w-[300px] h-[300px] bg-blue-300 rounded-full blur-[120px] opacity-40 -translate-x-1/4 -translate-y-1/4 z-0 pointer-events-none overflow-x-hidden"></div>
+
+    <!-- Gradient kanan bawah -->
+    <div class="absolute bottom-0 right-0 w-[300px] h-[300px] bg-blue-300 rounded-full blur-[120px] opacity-40 translate-x-1/4 translate-y-1/4 z-0 pointer-events-none overflow-x-hidden"></div>
+    
+    <div class="relative z-50 flex justify-center gap-[300px] py-5 text-gray-600 border-b border-gray-200">
+    <a href="index.html" class="hover:text-black transform transition duration-300 hover:-translate-y-1">
+        Home
+    </a>
+
+     <div class="relative group">
+
+        <a href="#" class="flex items-center gap-2 hover:text-black transform transition duration-300">
+            Project
+             <span class="transition-transform duration-300 group-hover:rotate-180">
+                <svg xmlns="http://www.w3.org/2000/svg" 
+                    class="w-4 h-4" 
+                    fill="none" 
+                    viewBox="0 0 24 24" 
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+            </span>
+        </a>
+
+        <div class="absolute left-1/2 -translate-x-1/2 top-full pt-2">
+
+            <div class="w-56 bg-white rounded-xl border border-gray-200 shadow-lg p-5 mt-2
+                opacity-0 invisible group-hover:opacity-100 group-hover:visible 
+                transition duration-300 space-y-2 text-sm ">
+
+                    <a href="visualization.html" class="block hover:text-blue-500 transition">
+                        Data Visualization
+                    </a>
+
+                    <a href="analysis.html" class="block hover:text-blue-500 transition">
+                        Data Analytics
+                    </a>
+
+                    <a href="web.html" class="block hover:text-blue-500 transition">
+                        Web Development
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+    
+
+    </div>
+
+    <section class="w-full bg-gray-50 text-black px-6 py-24 md:px-20 min-h-screen flex flex-col items-center">
+        <div class="max-w-5xl w-full space-y-12">
+            
+            <div class="space-y-6">
+                <h1 class="text-4xl md:text-6xl font-bold text-[#0070E1] leading-tight">
+                    Telecommunications:<br>Optimizing Customer Acquisition
+                </h1>
+                
+                <div class="space-y-4">
+                    <h2 class="text-2xl font-bold border-b-2 border-[#0070E1] w-fit pb-1">Description :</h2>
+                    <p class="text-gray-700 leading-relaxed text-lg text-justify">
+                        Red Ventures is a marketing company that has a strategic partnership with a telecommunications company that offers telephone, internet, and cable television subscriptions. 
+                        In this collaboration, Red Ventures is responsible for managing and optimazing two primary customer acquisition channels: the online purchasing system (website cart) and the call center supported by sales agents. 
+                        Their goal is to increase customer acquisition and maximize conversions by delivering the most effective purchase experience. The challenge lies in the varying preferences and behavior of the customer. 
+                        Some prefer to purchase through online cart and others prefer to transact with the help of a live sales agent. 
+                        Therefore, Red Ventures must analyze user behavior and identify patterns to determine which customer segments should be guided toward online purchasing and which should be directed to the call center.
+                        </p>
+                </div>
+            </div>
+
+            <div class="space-y-6">
+                <h2 class="text-2xl font-bold border-b-2 border-[#0070E1] w-fit pb-1">Tableau Dashboard</h2>
+                <div class="w-full rounded-xl overflow-hidden shadow-2xl border border-gray-100">
+                    <img src="aset/dashboard.png" alt="Dashboard" class="w-full h-auto">
+                </div>
+            </div>
+
+            <div class="space-y-6 pb-20">
+                <h2 class="text-2xl font-bold border-b-2 border-[#0070E1] w-fit pb-1">Insight</h2>
+                <div class="space-y-6 text-gray-700 leading-relaxed text-lg text-justify">
+                    <p>As Red Ventures, several strategies can be implemented to optimize customer acquisition across both online and call center channels. 
+                        Based on the analysis, a key insight is that the majority of customers are coming from direct entry, indicating that they are already familiar with the telecommunications company. These users likely have prior experience with the brand and understand the purchasing process, which suggests a high level of intent and confidence in completing transactions independently. This is further supported by the dominance of desktop usage, as desktop users typically prefer a smoother and more controlled browsing experience, making them more inclined to complete purchases directly through the website without requiring assistance from a call center.
+                        In contrast, users coming from natural search are more likely to be in the exploration stage. They may not be fully familiar with the company or its offerings and are often comparing options before making a decision. This group, especially those accessing the website via mobile devices, may require additional support to build trust and clarity. Therefore, they are more likely to benefit from being directed to assisted channels such as call centers. By aligning these different user segments with the most suitable purchasing channel, the company can create a more personalized experience, reduce friction in the decision-making process, and ultimately improve conversion rates.
+                        Additionally, paid search traffic shows relatively strong performance in several regions, indicating that it remains an effective acquisition channel. This suggests that the current paid search strategy should be maintained and further optimized, particularly by targeting high-performing regions and refining messaging to better capture user intent. By leveraging paid search alongside direct and organic channels, the company can expand its reach while still guiding users toward the most appropriate conversion path.
+
+                    </p>
+                 </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="w-full bg-white py-3 shadow-[0_-10px_20px_rgba(0,0,0,0.05)] border-t border-gray-50 relative z-40">
+        <div class="flex flex-col items-center justify-center">
+            
+            <p class="text-gray-400 font-semibold tracking-[0.2em] text-xs uppercase">
+                Amadita Arvida — 2026
+            </p>
+
+        </div>
+    </footer>
+
+<button id="toTop" class="fixed bottom-8 right-8 bg-[#0070E1] text-white p-3 rounded-full shadow-lg opacity-0 transition-opacity duration-300 z-50 hover:scale-110">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+    </svg>
+</button>
+
+
+<script src="script.js"></script>
+
+    </body>
+</html>
