@@ -1,3 +1,7 @@
+html, body {
+    overflow-x: hidden;
+}
+
  @keyframes subtle-sharp-rotate {
             0%, 100% { transform: rotate(0deg); }
             50% { transform: rotate(5deg); } /* Rotasi hanya 8 derajat agar tipis */
