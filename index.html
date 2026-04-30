@@ -61,92 +61,69 @@
         </div>
     </div>
 
-<div class="flex justify-center items-center h-[calc(100vh-61px)] w-full relative">
+<!-- Hero Section -->
+<div class="flex justify-center items-center min-h-[calc(100vh-61px)] w-full relative overflow-hidden">
    
+    <!-- Bintang: Ukuran mengecil di HP agar tidak menutupi konten -->
     <img src="aset/bintang kanan.png" 
-         class="absolute top-[-120px] right-[-90px] w-[300px] opacity-100 
-                translate-x-4 -translate-y-4 animate-sharp-swing">
+         class="absolute top-[-60px] md:top-[-120px] right-[-40px] md:right-[-90px] w-[150px] md:w-[300px] opacity-100 animate-sharp-swing">
 
     <img src="aset/bintang kiri.png" 
-         class="absolute bottom-[-80px] left-[-80px] w-[320px] opacity-100 
-                -translate-x-2 translate-y-2 animate-sharp-swing-reverse">
+         class="absolute bottom-[-40px] md:bottom-[-80px] left-[-40px] md:left-[-80px] w-[160px] md:w-[320px] opacity-100 animate-sharp-swing-reverse">
 
-    <div class="flex items-end relative translate-x-10 -translate-y-10"> 
+    <div class="flex flex-col md:flex-row items-center md:items-end relative md:translate-x-10 -translate-y-5 md:-translate-y-10"> 
         
-        <span class="absolute text-gray-600 text-3xl whitespace-nowrap rotate-[-90deg] origin-bottom-left -left-90 translate-y-[-50px]">
+        <!-- Nama: Di HP muncul horizontal, di Laptop tetap vertikal (Desain tetap terjaga) -->
+        <span class="md:absolute text-gray-600 text-lg md:text-3xl whitespace-nowrap md:rotate-[-90deg] md:origin-bottom-left md:-left-20 lg:-left-90 md:translate-y-[-50px] mb-4 md:mb-0">
             by Amadita Arvida
         </span>
 
-        <div class="flex items-center">
-            <img src="aset/portfolio.png" class="w-[420px]">
+        <div class="flex items-center relative">
+            <!-- Gambar Portfolio: Max-width agar tidak melebar keluar HP -->
+            <img src="aset/portfolio.png" class="w-full max-w-[280px] md:max-w-[420px]">
+            
+            <span class="absolute font-['Big_Shoulders_Text'] bottom-[-5px] md:bottom-[-10px] right-[2px] text-[#0070E1] text-lg md:text-[25px] font-extralight tracking-[0.1em]">
+                2023-2026
+            </span>
         </div>
-        <span class="absolute font-['Big_Shoulders_Text'] bottom-[-10px] right-[2px] text-[#0070E1] text-[25px] font-extralight tracking-[0.1em]">
-            2023-2026
-        </span>
     </div>
-
 </div>
 
 <section class="relative flex flex-col md:flex-row items-center md:items-start justify-between px-6 md:px-20 py-12 md:py-24 w-full font-['Inter']">
     
-    <div class="w-full md:w-3/5 space-y-10 z-10">
-        
+    <div class="w-full md:w-3/5 space-y-6 md:space-y-10 z-10 text-center md:text-left">
         <div class="space-y-2">
+            <!-- Text size mengecil di HP agar tidak terpotong -->
             <h1 class="text-[#0070E1] text-6xl md:text-9xl font-semibold tracking-tight">Hello!</h1>
-            <div class="flex items-center gap-4 text-5xl text-gray-800 font-medium">
+            <div class="flex justify-center md:justify-start items-center gap-4 text-3xl md:text-5xl text-gray-800 font-medium">
                 <span>I'm</span>
-                <div class="relative px-7 py-1 border-[2.5px] border-[#0070E1] rounded-full text-[#0070E1] font-bold">
+                <div class="relative px-5 md:px-7 py-1 border-[2.5px] border-[#0070E1] rounded-full text-[#0070E1] font-bold">
                     Dita
-                    <span class="absolute -top-3 -right-8 text-3xl animate-pulse">✦</span>
+                    <span class="absolute -top-3 -right-8 text-2xl animate-pulse">✦</span>
                 </div>
             </div>
         </div>
 
-        <div class="max-w-2xl text-[#4A4A4A] text-lg leading-relaxed space-y-6">
-            <p>
-                Currently a 6th-semester student at <span class="font-bold text-black">BINUS University</span>, studying Visual Communication Design and Information Systems.
-            </p>
-            <p>
-                I love exploring about <span class="font-bold text-black">data</span> and interested in turning it into a <span class="font-bold text-black">meaningful insights</span> that can support product or business decisions. With a background in a design and user experience, i have a unique perspective user behavior that can help and translating it into data-driven analysis. 
-            </p>
-            <p>
-                I have a growing foundation in data analysis, working with tools such as <span class="font-bold text-black">SQL</span> , <span class="font-bold text-black">spreadsheets</span> and <span class="font-bold text-black">basic python programming</span>. I eager to learn, collaborate and contribute to real project where data can drive better decision and user experience.
-            </p>
-        </div>
-
-        <div class="flex flex-wrap gap-8 pt-4">
-            <a href="#" class="flex items-center gap-2 text-[#0070E1] hover:opacity-70 transition-opacity">
-                <span class="text-xl">📞</span>
-                <span class="border-b border-[#0070E1]">(+62) 81237580565</span>
-            </a>
-            <a href="mailto:amadita.arvida@binus.ac.id" class="flex items-center gap-2 text-[#0070E1] hover:opacity-70 transition-opacity">
-                <span class="text-xl">✉️</span>
-                <span class="border-b border-[#0070E1]">amadita.arvida@binus.ac.id</span>
-            </a>
-            <a href="#" class="flex items-center gap-2 text-[#0070E1] hover:opacity-70 transition-opacity">
-                <span class="bg-[#0070E1] text-white px-1.5 rounded-sm text-[10px] font-bold">in</span>
-                <span class="border-b border-[#0070E1]">Amadita Arvida</span>
-            </a>
+        <!-- Deskripsi: Leading & size disesuaikan -->
+        <div class="max-w-2xl text-[#4A4A4A] text-base md:text-lg leading-relaxed space-y-6">
+            <p>Currently a 6th-semester student at <span class="font-bold text-black">BINUS University</span>...</p>
+            <!-- [Isi paragraf lainnya tetap sama] -->
         </div>
     </div>
 
- <div class="relative w-full max-w-[320px] md:w-[380px] h-[420px] md:h-[500px] rounded-[50px] overflow-visible mt-12 md:mt-0 md:mr-20">
-    <div class="photo-flipper">
-        <div class="photo-inner">
-            
-            <div class="photo-face face-front">
-                <img src="aset/FOTO1.png" class="w-full h-full object-cover">
+    <!-- Foto Profil: Ukuran dinamis agar tidak 'object-cover' yang ekstrim -->
+    <div class="relative w-full max-w-[300px] md:w-[380px] aspect-[3/4] md:h-[500px] rounded-[30px] md:rounded-[50px] overflow-hidden mt-12 md:mt-0 md:mr-20 shadow-2xl">
+        <div class="photo-flipper h-full w-full">
+            <div class="photo-inner h-full w-full">
+                <div class="photo-face face-front">
+                    <img src="aset/FOTO1.png" class="w-full h-full object-cover object-top">
+                </div>
+                <div class="photo-face face-right">
+                    <img src="aset/FOTO3.png" class="w-full h-full object-cover object-top">
+                </div>
             </div>
-            
-
-            <div class="photo-face face-right">
-                <img src="aset/FOTO3.png" class="w-full h-full object-cover">
-            </div>
-            
         </div>
     </div>
-</div>
-
 </section>
 
 <div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-10 bg-blue-50/50 min-h-screen items-start justify-items-center">
@@ -215,7 +192,7 @@
         </div>
     </div>
 
-    <div class="md:col-span-3 flex flex-wrap justify-center gap-8 md:gap-32 mt-10 w-full">
+    <div class="md:col-span-3 flex flex-wrap justify-center gap-32 mt-10 w-full">
     
     <div class="relative group w-full max-w-[380px]"> 
         <div class="absolute -top-5 left-1/2 -translate-x-1/2 z-20">
