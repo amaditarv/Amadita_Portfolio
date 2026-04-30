@@ -3,23 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visualization - Amadita Arvida</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-        body { font-family: 'Inter', sans-serif; }
-        .text-justify { text-align: justify; text-justify: inter-word; }
-    </style>
+    <title>Porfolio</title>
+    <script src = "https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+   
 </head>
 <body class="bg-gray-100 overflow-x-hidden">
-    
-    
-    <div class="absolute top-0 left-0 w-[180px] h-[180px] md:w-[300px] md:h-[300px]  bg-blue-300 rounded-full blur-[120px] opacity-40 translate-x-0 md:-translate-x-1/4 translate-y-0 md:-translate-y-1/4  z-0 pointer-events-none overflow-x-hidden"></div>
+    <!-- Gradient kiri atas -->
+    <div class="absolute top-0 left-0 w-[300px] h-[300px] bg-blue-300 rounded-full blur-[120px] opacity-40 -translate-x-1/4 -translate-y-1/4 z-0 pointer-events-none"></div>
 
-    <div class="absolute bottom-0 right-0 w-[300px] h-[300px] md:w-[300px] md:h-[300px] bg-blue-300 rounded-full blur-[120px] opacity-40 translate-x-0 md:-translate-x-1/4 translate-y-0 md:-translate-y-1/4 z-0 pointer-events-none overflow-x-hidden"></div>
-    
-    <div class="relative z-50 flex justify-center gap-[300px] py-5 text-gray-600 border-b border-gray-200">
-    <a href="index.html" class="hover:text-black transform transition duration-300 hover:-translate-y-1">
+    <!-- Gradient kanan bawah -->
+    <div class="absolute bottom-0 right-0 w-[300px] h-[300px] bg-blue-300 rounded-full blur-[120px] opacity-40 z-0 pointer-events-none"></div>
+
+ <div class="relative z-50 flex justify-center gap-10 md:gap-[300px] py-5 text-gray-600 border-b border-gray-200">
+
+    <a href="#" class="hover:text-black transform transition duration-300 hover:-translate-y-1">
         Home
     </a>
 
@@ -55,203 +56,319 @@
                     <a href="web.html" class="block hover:text-blue-500 transition">
                         Web Development
                     </a>
-
                 </div>
-
             </div>
-
         </div>
-    
-    </div>
-    <section class="w-full bg-white text-black px-6 py-24 md:px-20 min-h-screen flex flex-col items-center">
-        <div class="max-w-5xl w-full space-y-12">
-            
-            <h1 class="text-4xl md:text-6xl font-bold text-[#0070E1] leading-tight">
-                Airline Customer Satisfaction<br>Prediction (Neural Network)
-            </h1>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
-                <div class="space-y-4">
-                    <h2 class="text-2xl font-bold border-b-2 border-[#0070E1] w-fit pb-1">Description :</h2>
-                    <p class="text-gray-700 leading-relaxed text-justify">
-                        The airline industry has experienced consistent growth in passenger numbers over the years, indicating a strong and increasing demand for air travel. 
-                        <br><br>
-                        However, despite this growth, customer satisfaction remains relatively low, with an American Customer Satisfaction Index (ACSI) score of 74 out of 100. This places the airline industry below sectors such as hotels, video streaming services, banking, and apparel. This gap highlights a key challenge: while more customers are using airline services, their overall experience may not fully meet expectations. Since customer satisfaction plays a crucial role in building loyalty and increasing customer lifetime value, airlines are increasingly focusing on understanding customer needs and improving the overall travel experience.
-                    </p>
-                </div>
-                <div class="space-y-4">
-                    <div class="flex items-center gap-2">
-                        <h2 class="text-xl font-bold">Dataset</h2>
-                        <span class="text-gray-500 font-normal">8000 rows of data</span>
-                    </div>
-                    <div class="rounded-lg overflow-hidden shadow-lg border border-gray-100">
-                        <img src="aset/data.png" alt="Dataset Preview" class="w-full h-auto">
-                    </div>
-                </div>
-            </div>
-
-            <div class="space-y-6">
-                <h2 class="text-2xl font-bold border-b-2 border-[#0070E1] w-fit pb-1">Result :</h2>
-                <div class="w-full rounded-lg overflow-hidden shadow-md border border-gray-100">
-                    <img src="aset/neural.png" alt="Accuracy Result" class="w-full h-auto">
-                </div>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-                <div class="rounded-lg overflow-hidden">
-                    <img src="aset/visual neural.png" alt="Neural Network Visualization" class="w-full h-auto">
-                </div>
-                <div class="space-y-6 text-gray-700 text-justify">
-                    <p>
-                    This neural network analysis aims to predict airline customer satisfaction using 8,000 data points, with variables such as Age, Arrival Delay, Departure Delay, Flight Time, and Type of Travel. The model achieved an accuracy of 77.10%, indicating a fairly strong performance in predicting customer satisfaction. It performs better in identifying satisfied customers (recall: 88.13%) compared to dissatisfied customers (recall: 65.45%), although predictions for dissatisfied customers are more precise.
-                    The most influential factors affecting customer satisfaction are Age, Arrival Delay, and Type of Travel. Older customers tend to be less satisfied, while flight delays significantly contribute to dissatisfaction. Additionally, customer expectations differ between personal and business travel.
-                    </p>
-                    <div class="space-y-2">
-                        <p class="font-bold text-black">Strategy Recommendations:</p>
-                        <ul class="list-disc ml-5 space-y-1">
-                            <li>Improve on-time performance by minimizing flight delays and providing compensation when delays occur.</li>
-                            <li>Provide special assistance and priority services for older passengers to enhance their travel experience.</li>
-                            <li>Develop tailored loyalty programs based on travel type (business vs. personal).</li>
-                            <li>Strengthen proactive customer service to identify and support potentially dissatisfied customers early (e.g., via email, SMS, or calls).</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <div class="flex items-center justify-center gap-0 py-10 bg-white">
-    <div class="h-[1px] w-24 bg-gray-200"></div>
-    <div class="h-2 w-2 rounded-full bg-[#0070E1] opacity-20"></div>
-    <div class="h-[1px] w-24 bg-gray-200"></div>
     </div>
 
+<div class="flex justify-center items-center h-[calc(100vh-61px)] w-full relative overflow-hidden px-4">
+   
+    <img src="aset/bintang kanan.png" 
+         class="absolute top-[-50px] -right-10 w-[150px] md:top-[-120px] md:right-[-90px] md:w-[300px] opacity-100 
+                translate-x-4 -translate-y-4 animate-sharp-swing">
 
-    <section class="w-full bg-gray-50 text-black px-6 py-12 md:px-20 min-h-screen flex flex-col items-center">
-        <div class="max-w-5xl w-full space-y-16">
-            
-            <h1 class="text-4xl md:text-6xl font-bold text-[#0070E1] leading-tight">
-                Customer Segmentation<br>using Clustering
-            </h1>
+    <img src="aset/bintang kiri.png" 
+         class="absolute -bottom-10 -left-10 w-[160px] md:bottom-[-80px] md:left-[-80px] md:w-[320px] opacity-100 
+                -translate-x-2 translate-y-2 animate-sharp-swing-reverse z-0">
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
-                <div class="space-y-4">
-                    <h2 class="text-2xl font-bold border-b-2 border-[#0070E1] w-fit pb-1">Description :</h2>
-                    <p class="text-gray-700 leading-relaxed text-justify">
-                        Coffee shop “Brew Haven” aims to improve the effectiveness of its marketing strategy. Currently, promotions are still general, such as mass discounts, which do not appeal to all customers. As a result, marketing budgets are not used efficiently, and the overall customer experience remains less personalized.
-                        <br><br>
-                        To address these challenges, the management plans to implement customer segmentation using data-driven cluster analysis. By identifying distinct customer groups based on their behavior and preferences, Brew Haven can design more targeted marketing strategies, improve customer engagement, and deliver a more personalized experience.
-                    </p>
-                </div>
-                <div class="space-y-4">
-                    <div class="rounded-lg overflow-hidden shadow-sm border border-gray-100">
-                        <img src="aset/variable.png" alt="Variabel Description" class="w-full h-auto">
-                    </div>
-                </div>
-            </div>
-
-            <div class="space-y-6">
-                <h2 class="text-2xl font-bold border-b-2 border-[#0070E1] w-fit pb-1">Result :</h2>
-                <div class="w-full rounded-xl overflow-hidden shadow-xl border border-gray-100 p-4">
-                    <img src="aset/cluster.png" alt="Cluster Line Chart" class="w-full h-auto">
-                </div>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 items-center pb-20">
-                <div class="md:col-span-2 space-y-6 text-gray-700 text-justify">
-                    <p>
-                        Our main target segment is Cluster 2, known as Premium Experience Seekers. This group represents the most valuable customers, as they combine high visit frequency with high spending, making a strong contribution to overall revenue. They also have the highest income levels and are less sensitive to price, allowing the business to apply more flexible pricing strategies. In addition, their high digital engagement makes them easy to reach through platforms such as mobile apps, social media, and digital loyalty programs.
-                    </p>
-                    <p>
-                        From a behavioral perspective, this segment prioritizes ambience and overall dining experience, focusing on quality, comfort, and premium service rather than low prices. This creates an opportunity for the business to enhance customer experience through better store atmosphere, personalized service, and exclusive loyalty programs. With the right approach, such as personalized promotions and experiential marketing, this segment can be retained and further developed through upselling and cross-selling, making it the most strategic segment for long-term growth.
-                    </p>
-                </div>
-                <div class="md:col-span-1">
-                    <div class="rounded-lg overflow-hidden shadow-md">
-                        <img src="aset/graph.png" alt="Cluster Comparison" class="w-full h-auto">
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <div class="flex items-center justify-center gap-0 py-10 bg-white">
-    <div class="h-[1px] w-24 bg-gray-200"></div>
-    <div class="h-2 w-2 rounded-full bg-[#0070E1] opacity-20"></div>
-    <div class="h-[1px] w-24 bg-gray-200"></div>
-    </div>
-
-   <section class="w-full bg-white text-black px-6 py-12 md:px-20 min-h-screen flex flex-col items-center">
-    <div class="max-w-5xl w-full space-y-12">
+    <div class="flex flex-col md:flex-row items-center md:items-end relative md:translete-x-10 md:-translate-y-10"> 
         
-        <div class="space-y-6">
-            <h1 class="text-4xl md:text-6xl font-bold text-[#0070E1] leading-tight">
-                Revenue Driver Analysis<br>for ShopSmart
-            </h1>
-            
-            <div class="space-y-4">
-                <h2 class="text-2xl font-bold border-b-2 border-[#0070E1] w-fit pb-1">Description :</h2>
-                <p class="text-gray-700 leading-relaxed text-justify">
-                    Coffee shop "Brew Haven" aims to improve the effectiveness of its marketing strategy. Currently, promotions are still general, such as mass discounts, which do not appeal to all customers. As a result, marketing budgets are not used efficiently, and the overall customer experience remains less personalized.
-                </p>
-                <p class="text-gray-700 leading-relaxed text-justify">
-                    To address these challenges, the management plans to implement customer segmentation using data-driven cluster analysis. By identifying distinct customer groups based on their behavior and preferences, Brew Haven can design more targeted marketing strategies, improve customer engagement, and deliver a more personalized experience.
-                </p>
+        <span class="hidden md:block absolute text-gray-600 text-xl lg:text-3xl whitespace-nowrap rotate-[-90deg] origin-bottom-left -left-90 lg:-left-90 translate-y-[-50px]">
+            by Amadita Arvida
+        </span>
+
+        <div class="flex items-center">
+            <img src="aset/portfolio.png" class="w-[280px] sm:w-[350px] md:w-[420px] relative z-10">
+        </div>
+        <span class="static md:absolute font-['Big_Shoulders_Text'] mt-4 md:mt-0 md:bottom-[-10px] md:right-[2px] text-[#0070E1] text-[18px] md:text-[25px] font-extralight tracking-[0.1em]">
+            2023-2026
+        </span>
+    </div>
+
+</div>
+
+<section class="relative flex flex-col md:flex-row items-start justify-between px-20 py-24 w-full font-['Inter']">
+    
+    <div class="w-full md:w-3/5 space-y-10 z-10">
+        
+        <div class="space-y-2">
+            <h1 class="text-[#0070E1] text-9xl font-semibold tracking-tight">Hello!</h1>
+            <div class="flex items-center gap-4 text-5xl text-gray-800 font-medium">
+                <span>I'm</span>
+                <div class="relative px-7 py-1 border-[2.5px] border-[#0070E1] rounded-full text-[#0070E1] font-bold">
+                    Dita
+                    <span class="absolute -top-3 -right-8 text-3xl animate-pulse">✦</span>
+                </div>
             </div>
         </div>
 
-        <div class="space-y-6">
-            <h2 class="text-2xl font-bold border-b-2 border-[#0070E1] w-fit pb-1">Result :</h2>
-            <div class="w-full rounded-xl overflow-hidden shadow-2xl border border-gray-100 p-2 bg-gray-50">
-                <img src="aset/regresi.png" alt="Revenue Driver Analysis Results" class="w-full h-auto">
-            </div>
-        </div>
-
-        <div class="space-y-6 pb-20">
-            <h2 class="text-2xl font-bold border-b-2 border-[#0070E1] w-fit pb-1">Key Findings & Analysis</h2>
-
-            <div class="space-y-6 text-gray-700 leading-relaxed text-justify">
-                <div class="space-y-3">
-                    <h3 class="text-xl font-semibold text-black italic">Model Performance</h3>
-                    <p>
-                        The model yields a <strong>Squared Correlation (R²) of 0.634</strong>, indicating that approximately <strong>63%</strong> of the variance in revenue can be explained by the included variables. While this suggests a moderately strong relationship and a good starting point for predictive modeling, the <strong>Root Mean Squared Error (RMSE)</strong> stands at <strong>68,014</strong>. 
-                    </p>
-                    <p>
-                        When compared to the <strong>Average Revenue of 180,622</strong>, the error margin remains relatively high. This suggests that while the model captures the general trend, it still possesses a high probability of significant individual prediction errors, likely due to unobserved factors or high volatility in sales data.
-                    </p>
-                </div>
-
-                <div class="space-y-3">
-                    <h3 class="text-xl font-semibold text-black italic">Primary Revenue Drivers</h3>
-                    <p>
-                        Based on the coefficients, the most influential factors driving revenue are <strong>Bestseller status</strong> and <strong>Discount levels</strong>. Specifically, the "Bestseller = No" attribute shows a strong negative coefficient, confirming that bestseller status is a critical prerequisite for high-revenue products. 
-                    </p>
-                    <p>
-                        <strong>Discounts</strong> also play a significant role in transaction volume, whereas <strong>Ratings</strong> were found to have a negligible impact on revenue in this specific dataset. This implies that customers at ShopSmart may be more "price-sensitive" (driven by deals and popularity) rather than "quality-sensitive" (driven by peer reviews).
-                    </p>
-                </div>
-
-                <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-[#0070E1]">
-                    <p class="font-bold text-[#0070E1] mb-2">Strategic Recommendation:</p>
-                    <p class="italic">
-                        "To optimize revenue, the marketing team should focus on aggressive discount layering for non-bestseller items to clear inventory, while maintaining the 'Bestseller' badge visibility as it acts as the strongest psychological trigger for purchase."
-                    </p>
-                </div>
-            </div>
-        </div> </div> </section>
-
-   <footer class="w-full bg-white py-3 shadow-[0_-10px_20px_rgba(0,0,0,0.05)] border-t border-gray-50 relative z-40">
-        <div class="flex flex-col items-center justify-center">
-            
-            <p class="text-gray-400 font-semibold tracking-[0.2em] text-xs uppercase">
-                Amadita Arvida — 2026
+        <div class="max-w-2xl text-[#4A4A4A] text-lg leading-relaxed space-y-6">
+            <p>
+                Currently a 6th-semester student at <span class="font-bold text-black">BINUS University</span>, studying Visual Communication Design and Information Systems.
             </p>
-
+            <p>
+                I love exploring about <span class="font-bold text-black">data</span> and interested in turning it into a <span class="font-bold text-black">meaningful insights</span> that can support product or business decisions. With a background in a design and user experience, i have a unique perspective user behavior that can help and translating it into data-driven analysis. 
+            </p>
+            <p>
+                I have a growing foundation in data analysis, working with tools such as <span class="font-bold text-black">SQL</span> , <span class="font-bold text-black">spreadsheets</span> and <span class="font-bold text-black">basic python programming</span>. I eager to learn, collaborate and contribute to real project where data can drive better decision and user experience.
+            </p>
         </div>
-    </footer>
 
+        <div class="flex flex-wrap gap-8 pt-4">
+            <a href="#" class="flex items-center gap-2 text-[#0070E1] hover:opacity-70 transition-opacity">
+                <span class="text-xl">📞</span>
+                <span class="border-b border-[#0070E1]">(+62) 81237580565</span>
+            </a>
+            <a href="mailto:amadita.arvida@binus.ac.id" class="flex items-center gap-2 text-[#0070E1] hover:opacity-70 transition-opacity">
+                <span class="text-xl">✉️</span>
+                <span class="border-b border-[#0070E1]">amadita.arvida@binus.ac.id</span>
+            </a>
+            <a href="https://www.linkedin.com/in/amadita-arvida-6921b8349/" class="flex items-center gap-2 text-[#0070E1] hover:opacity-70 transition-opacity">
+                <span class="bg-[#0070E1] text-white px-1.5 rounded-sm text-[10px] font-bold">in</span>
+                <span class="border-b border-[#0070E1]">Amadita Arvida</span>
+            </a>
+        </div>
+    </div>
+
+ <div class="relative w-[380px] h-[500px] rounded-[50px] overflow-visible mr-20 ">
+    <div class="photo-flipper">
+        <div class="photo-inner">
+            
+            <div class="photo-face face-front">
+                <img src="aset/FOTO1.png" class="w-full h-full object-cover">
+            </div>
+            
+
+            <div class="photo-face face-right">
+                <img src="aset/FOTO3.png" class="w-full h-full object-cover">
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+</section>
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-10 bg-blue-50/50 min-h-screen items-start justify-items-center">
+  
+  <div class="relative group mt-20 w-full max-w-[380px]"> 
+    <div class="absolute -top-5 left-1/2 -translate-x-1/2 z-20">
+        <div class="w-9 h-9 bg-blue-400 rounded-full shadow-[inset_0_-3px_6px_rgba(0,0,0,0.3)] shadow-blue-500/50"></div>
+        <div class="w-6 h-6 bg-blue-200 rounded-full -mt-4 ml-1.5 opacity-90"></div>
+    </div>
+
+    <div class="bg-white w-full min-h-[300px] rounded-[50px] p-8 shadow-xl shadow-blue-100 border border-white flex flex-col">
+      <h2 class="text-blue-600 text-2xl font-bold mb-6">Education</h2>
+      <div class="space-y-6">
+        <div>
+          <span class="bg-blue-50 text-blue-600 px-3 py-1 rounded-full text-sm font-semibold">2023 - Present</span>
+          <p class="font-bold mt-2 text-xl">Bina Nusantara University</p>
+          <p class="text-gray-500 text-sm">Interactive Design & Technology</p>
+        </div>
+        <div>
+          <span class="bg-blue-50 text-blue-600 px-3 py-1 rounded-full text-sm font-semibold">2020 - 2023</span>
+          <p class="font-bold mt-2 text-xl">SMAK Santo Yoseph Denpasar</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="relative group mt-20 w-full max-w-[380px]"> 
+    <div class="absolute -top-5 left-1/2 -translate-x-1/2 z-20">
+        <div class="w-9 h-9 bg-blue-400 rounded-full shadow-[inset_0_-3px_6px_rgba(0,0,0,0.3)] shadow-blue-500/50"></div>
+        <div class="w-6 h-6 bg-blue-200 rounded-full -mt-4 ml-1.5 opacity-90"></div>
+    </div>
+
+    <div class="bg-white w-full min-h-[300px] rounded-[50px] p-8 shadow-xl shadow-blue-100 border border-white flex flex-col">
+        <h2 class="text-blue-600 text-2xl font-bold mb-6">Softwares</h2>
+        <div class="flex flex-wrap gap-3">
+            <span class="border border-blue-200 text-blue-600 px-4 py-1.5 rounded-full text-sm font-medium bg-blue-50/30">Java</span>
+            <span class="border border-blue-200 text-blue-600 px-4 py-1.5 rounded-full text-sm font-medium bg-blue-50/30">HTML / CSS</span>
+            <span class="border border-blue-200 text-blue-600 px-4 py-1.5 rounded-full text-sm font-medium bg-blue-50/30">MySQL</span>
+            <span class="border border-blue-200 text-blue-600 px-4 py-1.5 rounded-full text-sm font-medium bg-blue-50/30">Python</span>
+            <span class="border border-blue-200 text-blue-600 px-4 py-1.5 rounded-full text-sm font-medium bg-blue-50/30">Tableau</span>
+            <span class="border border-blue-200 text-blue-600 px-4 py-1.5 rounded-full text-sm font-medium bg-blue-50/30">RapidMiner</span>
+            <span class="border border-blue-200 text-blue-600 px-4 py-1.5 rounded-full text-sm font-medium bg-blue-50/30">Adobe Illustrator</span>
+            <span class="border border-blue-200 text-blue-600 px-4 py-1.5 rounded-full text-sm font-medium bg-blue-50/30">Figma</span>
+            <span class="border border-blue-200 text-blue-600 px-4 py-1.5 rounded-full text-sm font-medium bg-blue-50/30">Adobe Photoshop</span>
+        </div>
+    </div>
+  </div>
+
+  <div class="relative group mt-20 w-full max-w-[380px]"> 
+    <div class="absolute -top-5 left-1/2 -translate-x-1/2 z-20">
+        <div class="w-9 h-9 bg-blue-400 rounded-full shadow-[inset_0_-3px_6px_rgba(0,0,0,0.3)] shadow-blue-500/50"></div>
+        <div class="w-6 h-6 bg-blue-200 rounded-full -mt-4 ml-1.5 opacity-90"></div>
+    </div>
+
+        <div class="bg-white w-full min-h-[300px] rounded-[50px] p-8 shadow-xl shadow-blue-100 border border-white flex flex-col">
+        <h2 class="text-blue-600 text-2xl font-bold mb-6">Soft Skills</h2>
+        <div class="flex flex-wrap gap-3">
+            <span class="border border-blue-200 text-blue-600 px-4 py-1.5 rounded-full text-sm font-medium bg-blue-50/30">Teamwork</span>
+            <span class="border border-blue-200 text-blue-600 px-4 py-1.5 rounded-full text-sm font-medium bg-blue-50/30">Creative</span>
+            <span class="border border-blue-200 text-blue-600 px-4 py-1.5 rounded-full text-sm font-medium bg-blue-50/30">Adaptive</span>
+            <span class="border border-blue-200 text-blue-600 px-4 py-1.5 rounded-full text-sm font-medium bg-blue-50/30">Time Management</span>
+            <span class="border border-blue-200 text-blue-600 px-4 py-1.5 rounded-full text-sm font-medium bg-blue-50/30">Problem Solving</span>
+            <span class="border border-blue-200 text-blue-600 px-4 py-1.5 rounded-full text-sm font-medium bg-blue-50/30">Analytical Thinking</span>
+            <span class="border border-blue-200 text-blue-600 px-4 py-1.5 rounded-full text-sm font-medium bg-blue-50/30">Motivated</span>
+        </div>
+        </div>
+    </div>
+
+    <div class="md:col-span-3 flex flex-wrap justify-center gap-32 mt-10 w-full">
+    
+    <div class="relative group w-full max-w-[380px]"> 
+        <div class="absolute -top-5 left-1/2 -translate-x-1/2 z-20">
+            <div class="w-9 h-9 bg-blue-400 rounded-full shadow-[inset_0_-3px_6px_rgba(0,0,0,0.3)] shadow-blue-500/50"></div>
+            <div class="w-6 h-6 bg-blue-200 rounded-full -mt-4 ml-1.5 opacity-90"></div>
+        </div>
+
+        <div class="bg-white w-full min-h-[300px] rounded-[50px] p-8 shadow-xl shadow-blue-100 border border-white flex flex-col">
+          <h2 class="text-blue-600 text-2xl font-bold mb-6">Experiences</h2>
+          <div class="space-y-6">
+              <div>
+                <span class="bg-blue-50 text-blue-600 px-3 py-1 rounded-full text-xs font-bold border border-blue-100">Aug 2024 - Feb 2025</span>
+                <p class="font-bold mt-2 text-lg">Laboratory Teaching Assistant</p>
+                <p class="text-gray-500 text-sm">Bina Nusantara University</p>
+                <p class="text-gray-400 text-xs mt-1 italic">Teaching Database Technology Course</p>
+              </div>
+              <div>
+                <span class="bg-blue-50 text-blue-600 px-3 py-1 rounded-full text-xs font-bold border border-blue-100">Jul 2024 - Jan 2025</span>
+                <p class="font-bold mt-2 text-lg">Duta Binusian Odd Period</p>
+                <p class="text-gray-500 text-sm">Bina Nusantara University</p>
+                <p class="text-gray-400 text-xs mt-1 italic">Being a mentor for my major, helped students overcome their academic and personal challenges</p>
+              </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="relative group w-full max-w-[380px]"> 
+        <div class="absolute -top-5 left-1/2 -translate-x-1/2 z-20">
+            <div class="w-9 h-9 bg-blue-400 rounded-full shadow-[inset_0_-3px_6px_rgba(0,0,0,0.3)] shadow-blue-500/50"></div>
+            <div class="w-6 h-6 bg-blue-200 rounded-full -mt-4 ml-1.5 opacity-90"></div>
+        </div>
+
+        <div class="bg-white w-full min-h-[200px] rounded-[50px] p-8 shadow-xl shadow-blue-100 border border-white flex flex-col">
+          <h2 class="text-blue-600 text-2xl font-bold mb-6">Language</h2>
+          <div class="space-y-4">
+              <div class="border border-blue-100 bg-blue-50/30 rounded-full px-6 py-3 text-blue-600 font-medium">
+                  Bahasa Indonesia
+              </div>
+              <div class="border border-blue-100 bg-blue-50/30 rounded-full px-6 py-3 text-blue-600 font-medium">
+                  English
+              </div>
+          </div>
+        </div>
+    </div>
+
+  </div> </div> 
+   
+
+
+
+</div>
+
+<section class="w-full overflow-hidden bg-[#0070E1] text-white px-6 py-24 md:px-20 min-h-screen flex flex-col items-center mt-32">
+    
+    <div class="text-center max-w-4xl mx-auto mb-20 space-y-4">
+        <h1 class="text-5xl md:text-7xl font-bold leading-none">
+            Things I Can Help With
+        </h1>
+        <p class="text-lg md:text-xl font-normal opacity-90 max-w-2xl mx-auto">
+            ✦ A quick look at what I love creating and working on! ✦
+        </p>
+    </div>
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-7xl mx-auto items-center justify-items-center px-6">
+
+    <a href="visualization.html" class="group relative bg-white text-black min-h-[480px] w-full max-w-[300px] mx-auto flex flex-col items-center overflow-hidden rounded-sm shadow-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+        <div class="gerigi-top"></div>
+        <div class="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 bg-[#0070E1] rounded-full z-30"></div>
+
+        <div class="flex-1 flex flex-col items-center justify-between p-8 pt-12 pb-10 w-full">
+            <div class="text-center w-full">
+                <h3 class="text-3xl font-bold leading-tight mb-8">
+                    Data<br>Visualization
+                </h3>
+                <div class="w-44 h-44 bg-[#FDEBD0] rounded-3xl flex items-center justify-center mx-auto relative transition-colors duration-300 group-hover:bg-[#FAD7A0]">
+                    <span class="text-6xl">📊</span>
+                </div>
+            </div>
+
+            <div class="w-full border-t-2 border-dashed border-gray-200 pt-6 text-center relative">
+                <div class="absolute -left-11 -top-3 w-6 h-6 bg-[#0070E1] rounded-full"></div>
+                <div class="absolute -right-11 -top-3 w-6 h-6 bg-[#0070E1] rounded-full"></div>
+                <span class="text-gray-400 font-bold text-xl font-mono">#01</span>
+            </div>
+        </div>
+
+        <div class="absolute -bottom-6 left-1/2 -translate-x-1/2 w-12 h-12 bg-[#0070E1] rounded-full z-30"></div>
+        <div class="gerigi-bottom"></div>
+    </a>
+
+    <a href="analysis.html" class="group relative bg-white text-black min-h-[480px] w-full max-w-[300px] mx-auto flex flex-col items-center overflow-hidden rounded-sm shadow-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+        <div class="gerigi-top"></div>
+        <div class="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 bg-[#0070E1] rounded-full z-30"></div>
+
+        <div class="flex-1 flex flex-col items-center justify-between p-8 pt-12 pb-10 w-full">
+            <div class="text-center w-full">
+                <h3 class="text-3xl font-bold leading-tight mb-8">
+                    Data<br>Analytics
+                </h3>
+                <div class="w-44 h-44 bg-[#FDEBD0] rounded-3xl flex items-center justify-center mx-auto relative transition-colors duration-300 group-hover:bg-[#FAD7A0]">
+                    <span class="text-6xl">🔍</span>
+                </div>
+            </div>
+
+            <div class="w-full border-t-2 border-dashed border-gray-200 pt-6 text-center relative">
+                <div class="absolute -left-11 -top-3 w-6 h-6 bg-[#0070E1] rounded-full"></div>
+                <div class="absolute -right-11 -top-3 w-6 h-6 bg-[#0070E1] rounded-full"></div>
+                <span class="text-gray-400 font-bold text-xl font-mono">#02</span>
+            </div>
+        </div>
+
+        <div class="absolute -bottom-6 left-1/2 -translate-x-1/2 w-12 h-12 bg-[#0070E1] rounded-full z-30"></div>
+        <div class="gerigi-bottom"></div>
+    </a>
+
+    <a href="web.html" class="group relative bg-white text-black min-h-[480px] w-full max-w-[300px] mx-auto flex flex-col items-center overflow-hidden rounded-sm shadow-xl transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+        <div class="gerigi-top"></div>
+        <div class="absolute -top-6 left-1/2 -translate-x-1/2 w-12 h-12 bg-[#0070E1] rounded-full z-30"></div>
+
+        <div class="flex-1 flex flex-col items-center justify-between p-8 pt-12 pb-10 w-full">
+            <div class="text-center w-full">
+                <h3 class="text-3xl font-bold leading-tight mb-8">
+                    Web<br>Development
+                </h3>
+                <div class="w-44 h-44 bg-[#FDEBD0] rounded-3xl flex items-center justify-center mx-auto relative transition-colors duration-300 group-hover:bg-[#FAD7A0]">
+                    <span class="text-6xl">💻</span>
+                </div>
+            </div>
+
+            <div class="w-full border-t-2 border-dashed border-gray-200 pt-6 text-center relative">
+                <div class="absolute -left-11 -top-3 w-6 h-6 bg-[#0070E1] rounded-full"></div>
+                <div class="absolute -right-11 -top-3 w-6 h-6 bg-[#0070E1] rounded-full"></div>
+                <span class="text-gray-400 font-bold text-xl font-mono">#03</span>
+            </div>
+        </div>
+
+        <div class="absolute -bottom-6 left-1/2 -translate-x-1/2 w-12 h-12 bg-[#0070E1] rounded-full z-30"></div>
+        <div class="gerigi-bottom"></div>
+    </a>
+
+</div>
+
+    </section>
+
+<footer class="w-full bg-white py-3 shadow-[0_-10px_20px_rgba(0,0,0,0.05)] border-t border-gray-50 relative z-40">
+    <div class="flex flex-col items-center justify-center">
+        
+        <p class="text-gray-400 font-semibold tracking-[0.2em] text-xs uppercase">
+            Amadita Arvida — 2026
+        </p>
+
+    </div>
+</footer>
 
 <button id="toTop" class="fixed bottom-8 right-8 bg-[#0070E1] text-white p-3 rounded-full shadow-lg opacity-0 transition-opacity duration-300 z-50 hover:scale-110">
     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -261,6 +378,5 @@
 
 
 <script src="script.js"></script>
-
-    </body>
+</body>
 </html>
